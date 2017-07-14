@@ -1,5 +1,5 @@
 # JJCommonCollectionViewLayout
-一个好用的布局，遵守几个代理，即可实现想要的布局。
+一个好用的布局，遵守几个代理，即可实现想要的布局。(OC版本)
 
 ![](Resouce/0.png)
 
