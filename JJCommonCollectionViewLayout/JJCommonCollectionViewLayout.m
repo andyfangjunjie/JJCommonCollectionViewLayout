@@ -45,7 +45,7 @@ UIEdgeInsets const DefaultEdgeInsetsOfHeaderOrFooter = {0,0,0,0};
 @end
 
 @implementation JJCommonCollectionViewLayout
-    
+
 - (instancetype)initWithDataSource:(__weak id<JJCommonCollectionViewLayoutDataSource>)dataSource {
     if (self == [super init]) {
         self.dataSource = dataSource;
@@ -81,7 +81,7 @@ UIEdgeInsets const DefaultEdgeInsetsOfHeaderOrFooter = {0,0,0,0};
     
     //设置布局元素
     [self setupAttributes];
-
+    
 }
 /** 设置每一列的高度 */
 - (void)setupColumnHeight {
@@ -101,7 +101,7 @@ UIEdgeInsets const DefaultEdgeInsetsOfHeaderOrFooter = {0,0,0,0};
     }
     
     self.contentHeight = [self edgeInsetsOfOverall].top;
-
+    
     //添加默认值，加上整体内边距的top值
     for (NSInteger i = 0;i < maxColumnOfSection;i++) {
         [self.columnHeightArray addObject:@(self.contentHeight)];
@@ -136,19 +136,19 @@ UIEdgeInsets const DefaultEdgeInsetsOfHeaderOrFooter = {0,0,0,0};
                     minHeightColumn = i;
                 }
             }
-
+            
             //1.设置宽度
             CGFloat width = (CollectionViewWidth - [self edgeInsetsOfOverall].left - [self edgeInsetsOfOverall].right - ([self numberOfColumnsInSection:section] - 1) * [self marginOfColumnInSection:section] - [self edgeInsetsInSection:section].left - [self edgeInsetsInSection:section].right) / [self numberOfColumnsInSection:section];
             //2.设置x
             CGFloat x = 0 + [self edgeInsetsOfOverall].left + minHeightColumn * (width + [self marginOfColumnInSection:section]) + [self edgeInsetsInSection:section].left;
             //3.设置y
             CGFloat y = [self.columnHeightArray[minHeightColumn] doubleValue];
-
+            
             //排除第一行多加[self marginOfRowInSection:section]
             if (row / [self numberOfColumnsInSection:section]) {
                 y += [self marginOfRowInSection:section];
             }
-
+            
             //4.设置高度 通过代理设置
             CGFloat height = [self.dataSource commonCollectionViewLayout:self heightForItemAtIndexPath:indexPath itemWidth:width rowMargin:[self marginOfRowInSection:section]];
             attribute.frame = CGRectMake(x, y, width, height);
@@ -182,8 +182,8 @@ UIEdgeInsets const DefaultEdgeInsetsOfHeaderOrFooter = {0,0,0,0};
     for (NSInteger i = 0;i < self.columnHeightArray.count;i++) {
         self.columnHeightArray[i] = @(self.contentHeight);
     }
-//    NSLog(@"%f",CGRectGetMaxY(headerAttributes.frame));
-
+    //    NSLog(@"%f",CGRectGetMaxY(headerAttributes.frame));
+    
     return headerAttributes;
 }
 /** 设置区尾 */
