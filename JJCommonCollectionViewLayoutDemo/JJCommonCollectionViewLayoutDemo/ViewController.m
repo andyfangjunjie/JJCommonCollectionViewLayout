@@ -26,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.dataArray = @[@"瀑布流",@"九宫格",@"复杂样式"];
+    self.dataArray = @[@"瀑布流",@"九宫格",@"复杂样式",@"样式自定义，只需遵守代理即可"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 #pragma mark - 代理
