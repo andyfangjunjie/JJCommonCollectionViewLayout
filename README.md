@@ -1,14 +1,14 @@
 # JJCommonCollectionViewLayout
 一个好用的布局，遵守几个代理，即可实现想要的布局。
 
-![](Resouce/home.png)
+![](Resouce/0.png)
 
 # 1.瀑布流
-![](Resouce/flow.png)
+![](Resouce/1.png)
 # 2.九宫格
-![](Resouce/square.png)
+![](Resouce/2.png)
 # 3.复杂样式
-![](Resouce/complex.png)
+![](Resouce/3.png)
 # 4.核心代码
 
 ```objc
