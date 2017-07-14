@@ -20,6 +20,8 @@
 		099F63BE1F18643800DB604B /* FlowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099F63BC1F18643800DB604B /* FlowViewController.xib */; };
 		099F63C21F18644D00DB604B /* SquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F63C01F18644D00DB604B /* SquareViewController.m */; };
 		099F63C31F18644D00DB604B /* SquareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099F63C11F18644D00DB604B /* SquareViewController.xib */; };
+		099F63C71F18674900DB604B /* ComplexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099F63C51F18674900DB604B /* ComplexViewController.m */; };
+		099F63C81F18674900DB604B /* ComplexViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099F63C61F18674900DB604B /* ComplexViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,9 @@
 		099F63BF1F18644D00DB604B /* SquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareViewController.h; sourceTree = "<group>"; };
 		099F63C01F18644D00DB604B /* SquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareViewController.m; sourceTree = "<group>"; };
 		099F63C11F18644D00DB604B /* SquareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SquareViewController.xib; sourceTree = "<group>"; };
+		099F63C41F18674900DB604B /* ComplexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexViewController.h; sourceTree = "<group>"; };
+		099F63C51F18674900DB604B /* ComplexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexViewController.m; sourceTree = "<group>"; };
+		099F63C61F18674900DB604B /* ComplexViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComplexViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +130,9 @@
 				099F63BF1F18644D00DB604B /* SquareViewController.h */,
 				099F63C01F18644D00DB604B /* SquareViewController.m */,
 				099F63C11F18644D00DB604B /* SquareViewController.xib */,
+				099F63C41F18674900DB604B /* ComplexViewController.h */,
+				099F63C51F18674900DB604B /* ComplexViewController.m */,
+				099F63C61F18674900DB604B /* ComplexViewController.xib */,
 				0922583C1F185B8000AE085B /* Main.storyboard */,
 				0922583F1F185B8000AE085B /* Assets.xcassets */,
 				092258411F185B8000AE085B /* LaunchScreen.storyboard */,
@@ -279,6 +287,7 @@
 				099F63C31F18644D00DB604B /* SquareViewController.xib in Resources */,
 				092258431F185B8000AE085B /* LaunchScreen.storyboard in Resources */,
 				092258401F185B8000AE085B /* Assets.xcassets in Resources */,
+				099F63C81F18674900DB604B /* ComplexViewController.xib in Resources */,
 				099F63BE1F18643800DB604B /* FlowViewController.xib in Resources */,
 				0922583E1F185B8000AE085B /* Main.storyboard in Resources */,
 			);
@@ -311,6 +320,7 @@
 				092258351F185B8000AE085B /* main.m in Sources */,
 				092258691F185BEE00AE085B /* JJCommonCollectionViewLayout.m in Sources */,
 				099F63C21F18644D00DB604B /* SquareViewController.m in Sources */,
+				099F63C71F18674900DB604B /* ComplexViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

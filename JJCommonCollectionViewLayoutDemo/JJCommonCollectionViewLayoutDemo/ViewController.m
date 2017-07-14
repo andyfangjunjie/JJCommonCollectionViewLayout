@@ -10,6 +10,7 @@
 
 #import "FlowViewController.h"
 #import "SquareViewController.h"
+#import "ComplexViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -25,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.dataArray = @[@"瀑布流",@"九宫格"];
+    self.dataArray = @[@"瀑布流",@"九宫格",@"复杂样式"];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
 #pragma mark - 代理
@@ -38,7 +39,7 @@
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UIViewController *base = [[NSClassFromString(@[@"FlowViewController",@"SquareViewController"][indexPath.row]) alloc] init];
+    UIViewController *base = [[NSClassFromString(@[@"FlowViewController",@"SquareViewController",@"ComplexViewController"][indexPath.row]) alloc] init];
     base.title = self.dataArray[indexPath.row];
     [self.navigationController pushViewController:base animated:YES];
 }
