@@ -39,6 +39,8 @@
     return cell;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == 3) return;
+    
     UIViewController *base = [[NSClassFromString(@[@"FlowViewController",@"SquareViewController",@"ComplexViewController"][indexPath.row]) alloc] init];
     base.title = self.dataArray[indexPath.row];
     [self.navigationController pushViewController:base animated:YES];
